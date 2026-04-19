@@ -1,6 +1,6 @@
 # High-Performance News Aggregator API
 
-A robust RESTful API built with Laravel 11 designed to aggregate, cache, and serve news content efficiently. This project demonstrates mid-level backend architecture, focusing on database optimization, smart caching, and authenticated user states.
+A robust RESTful API built with Laravel 10 designed to aggregate, cache, and serve news content efficiently. This project demonstrates mid-level backend architecture, focusing on database optimization, smart caching, and authenticated user states.
 
 ---
 
@@ -14,9 +14,9 @@ A robust RESTful API built with Laravel 11 designed to aggregate, cache, and ser
 
 ## Tech Stack
 
--   **Backend:** Laravel 11.x (PHP 8.2+)
--   **Database:** MySQL / PostgreSQL
--   **Caching:** Redis (Cache-aside pattern)
+-   **Backend:** Laravel 10.x (PHP 8.2+)
+-   **Database:** MySQL
+-   **Caching:** File cache (Cache-aside pattern)
 -   **Authentication:** Laravel Sanctum (Token-based)
 
 ---
