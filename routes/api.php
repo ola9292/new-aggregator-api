@@ -23,10 +23,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/news/comment/{blog:slug}', [BlogController::class, 'comment']);
     Route::post('/comments/{comment}/like', [BlogController::class, 'toggleLike']);
-    Route::get('/news/{blog:slug}', [BlogController::class, 'show']);
+
 });
 Route::get('/news', [BlogController::class, 'index']);
 
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+ Route::get('/news/{blog:slug}', [BlogController::class, 'show']);

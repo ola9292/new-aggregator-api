@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MathController;
 use App\Models\Blog;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -61,3 +62,5 @@ Route::get('/news', function () {
 
     return 'done';
 });
+
+Route::get('/maths', [MathController::class, 'index']);
